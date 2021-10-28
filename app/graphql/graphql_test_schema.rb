@@ -10,6 +10,6 @@ class GraphqlTestSchema < GraphQL::Schema
   use GraphQL::Pagination::Connections
 
   def self.object_from_id(node_id, ctx)
-    raise NotImplementedError
+    raise "this should not be called in this case as we are attempting to add a custom load method for the argument"
   end
 end
