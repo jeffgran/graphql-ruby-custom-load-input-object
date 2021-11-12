@@ -1,0 +1,7 @@
+name: jg-test
+authors: jgran@doximity.com
+licenses: MIT
+description: "I am trying to figure this out yo"
+version: 0.0.0
+dependencies:
+  codeql/ruby-all: "*"

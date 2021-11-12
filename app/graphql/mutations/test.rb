@@ -8,19 +8,12 @@ module Mutations
       "Some params",
       required: false
 
-    argument :something_id, ID,
-      loads: Something,
-      required: false,
-      pundit_policy_class: ApplicationPolicy,
-      pundit_role: :allow
+    argument :something_id, ID, required: false
 
     field :success, Boolean, null: false
 
-    def load_something(id)
-      Something.new
-    end
-
-    def resolve(**args)
+    def resolve(something_id:, params:)
+      system(something_id)
       { success: true }
     end
   end
