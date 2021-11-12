@@ -9,4 +9,4 @@
 import doximity.ruby.security.GraphqlSource
 
 from GraphqlRelayClassicMutationClass gqlclass
-select gqlclass
+select gqlclass, "This is a problem"
