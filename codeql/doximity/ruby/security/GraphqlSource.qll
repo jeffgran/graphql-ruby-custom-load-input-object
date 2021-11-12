@@ -10,7 +10,7 @@ private class GraphqlRelayClassicMutationAccess extends ConstantReadAccess {
   //GraphQL::Schema::RelayClassicMutation
   GraphqlRelayClassicMutationAccess() {
     this.getName() = "RelayClassicMutation" and
-    this.getScopeExpr().(ConstantAccess).getName() = "Schema"
+    this.getScopeExpr().(ConstantAccess).getName() = "Schema" and
     this.getScopeExpr().(ConstantAccess).getScopeExpr().(ConstantAccess).getName() = "GraphQL"
   }
 }
