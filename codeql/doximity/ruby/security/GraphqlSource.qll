@@ -49,7 +49,7 @@ class GraphqlRelayClassicMutationClass extends ClassDeclaration {
 class GraphqlResolveMethod extends Method, HTTP::Server::RequestHandler::Range {
   private GraphqlRelayClassicMutationClass mutationClass;
 
-  GraphqlResolveMethod() { this = mutationClass.getMethod("resolve").(GraphqlResolveMethod) }
+  GraphqlResolveMethod() { this = mutationClass.getMethod("resolve") }
 
   override Parameter getARoutedParameter() { result = this.getAParameter() }
 
