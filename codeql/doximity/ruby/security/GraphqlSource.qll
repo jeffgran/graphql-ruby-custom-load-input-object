@@ -34,7 +34,7 @@ class GraphqlRelayClassicMutationClass extends ClassDeclaration {
     this.getSuperclassExpr() instanceof GraphqlRelayClassicMutationAccess
     or
     // class BarController < FooController
-    exists(GraphqlRelayClassicMutationAccess other |
+    exists(GraphqlRelayClassicMutationClass other |
       other.getModule() = resolveScopeExpr(this.getSuperclassExpr())
     )
   }
