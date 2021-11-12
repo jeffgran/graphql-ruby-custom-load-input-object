@@ -42,7 +42,7 @@ class GraphqlRelayClassicMutationClass extends ClassDeclaration {
   /**
    *
    */
-  GraphqlResolveMethod getResolve() { result = this.getAMethod("resolve") }
+  GraphqlResolveMethod getResolve() { result = this.getMethod("resolve") }
 }
 
 
